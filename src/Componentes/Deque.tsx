@@ -43,8 +43,8 @@ export default function Deque()
         <div className='Geral'>
             <h1>Fila Dupla</h1>
             <div className='FilaDupla'>
-                { itens.map((item) => (
-                    <div className='Elemento'>{item}</div>
+                { itens.map((item , index) => (
+                    <div key={index} className='Elemento'>{item}</div>
                 ))}
             </div>
             <div className='Botoes'>
