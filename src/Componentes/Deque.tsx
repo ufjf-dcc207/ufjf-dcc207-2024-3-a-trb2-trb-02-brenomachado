@@ -16,6 +16,23 @@ export default function Deque()
         const clone = Array.from(itens);
         if(clone.length > 0)
         {
+            clone.shift();
+            setItens(clone);
+        }
+    }
+
+    function enfileiraAtras()
+    {
+        const clone = Array.from(itens);
+        clone.push(2);
+        setItens(clone);
+    }
+
+    function desenfileiraAtras()
+    {
+        const clone = Array.from(itens);
+        if(clone.length > 0)
+        {
             clone.pop();
             setItens(clone);
         }
@@ -40,10 +57,10 @@ export default function Deque()
                         ()=>{enfileiraFrente()}
                     }>Enfileira Frente</button>
                     <button onClick={
-                        ()=>{}
+                        ()=>{enfileiraAtras()}
                     }>Enfileira Atrás</button>
                     <button onClick={
-                        ()=>{}
+                        ()=>{desenfileiraAtras()}
                     }>Desenfileira Atrás</button>
                     <button onClick={
                         () => {desenfileiraFrente()}
