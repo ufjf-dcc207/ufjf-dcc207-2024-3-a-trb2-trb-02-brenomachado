@@ -59,18 +59,27 @@ export default function Deque()
                     placeholder="numero"
                 />
                 <section>
-                    <button onClick={
-                        ()=>{enfileiraFrente()}
-                    }>Enfileira Frente</button>
-                    <button onClick={
-                        ()=>{enfileiraAtras()}
-                    }>Enfileira Atrás</button>
-                    <button onClick={
-                        ()=>{desenfileiraAtras()}
-                    }>Desenfileira Atrás</button>
-                    <button onClick={
-                        () => {desenfileiraFrente()}
-                    }>Desenfileira Frente</button>
+                    <div className='Enfileirar'>
+                        <p>Enfileirar</p>
+                        <button onClick={
+                            ()=>{enfileiraFrente()}
+                        }>Frente</button>
+                        <button onClick={
+                            ()=>{enfileiraAtras()}
+                        }>Atrás</button>
+                    </div>
+                    
+                    <div className='Desenfileirar'>
+                        <p>Desenfileirar</p>
+                        <button onClick={
+                            () => {desenfileiraFrente()}
+                        }>Frente</button>
+                        <button onClick={
+                            ()=>{desenfileiraAtras()}
+                        }>Atrás</button>
+                    </div>
+
+                    
                 </section>
                
 
