@@ -66,20 +66,20 @@ export default function Deque()
                         <p>Enfileirar</p>
                         <button onClick={
                             ()=>{enfileiraFrente()}
-                        }>Frente</button>
+                        }>Início</button>
                         <button onClick={
                             ()=>{enfileiraAtras()}
-                        }>Atrás</button>
+                        }>Fim</button>
                     </div>
                     
                     <div className='Desenfileirar'>
                         <p>Desenfileirar</p>
                         <button onClick={
                             () => {desenfileiraFrente()}
-                        }>Frente</button>
+                        }>Início</button>
                         <button onClick={
                             ()=>{desenfileiraAtras()}
-                        }>Atrás</button>
+                        }>Fim</button>
                     </div>
 
                     
