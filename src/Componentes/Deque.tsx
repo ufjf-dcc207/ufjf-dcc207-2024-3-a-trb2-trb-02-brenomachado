@@ -41,7 +41,7 @@ export default function Deque()
 
     return (
         <div className='Geral'>
-            <h1 className='Titulo'>Fila Dupla</h1>
+            <h1 className='Titulo'>FILA DUPLA</h1>
             <div className='FilaDupla'>
                 { itens.map((item , index) => (
                     <div key={index} className='Elemento'>{item}</div>
@@ -49,8 +49,7 @@ export default function Deque()
             </div>
             <div className='Botoes'>
                 
-                <input  
-                    className='Numero'
+                <input 
                     type="number" 
                     value={valor}
                     onChange={(e) => {
@@ -59,7 +58,7 @@ export default function Deque()
                     }}
                     placeholder="numero"
                 />
-                <section className='Modificacoes'>
+                <section>
                     <button onClick={
                         ()=>{enfileiraFrente()}
                     }>Enfileira Frente</button>
