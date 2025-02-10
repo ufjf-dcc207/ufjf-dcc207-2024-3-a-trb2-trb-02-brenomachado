@@ -24,24 +24,33 @@
     }
     .FilaDupla{
         border: 3px solid blue;
+
         /*vizualização da fila*/
-        display: flex;
-        width: 80%;
-        height: 160px;
-        justify-content: center;
-        justify-content: space-evenly;
-        align-items: center;
-        overflow-x: scroll;
-        
+        display: flex; /*deita os itens da fila*/
+        width: 1200px;
+        height: 160px; /*até aqui o tamanho*/
+        justify-content: center; /*centraliza os elementos da fila*/
+        justify-content: space-evenly; /*coloca espaço entre os elementos*/
+        align-items: center; /*centraliza os elementos*/
+
 
         .Elemento{
             border: 3px solid red;
 
-            /*aparência da cada célula*/
+            /*aparência de cada célula*/
             width: 100px;
             height: 100px;
-
+            background-color: #ddd6d6;
+            border-radius: 16px;
             
+            /*aparência dos números*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            font-family: 'Inter', sans-serif;
+            font-weight: bold;
+
         }
     }
     .Botoes{
@@ -63,7 +72,7 @@
             border: 3px solid orangered;
         }
         button{
-            border: 3px solid orange;
+            border: 3px solid orange;  
         }
     }
 }
