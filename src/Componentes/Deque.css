@@ -101,7 +101,7 @@
             /*posição dos botões*/
             display: flex;  
             justify-content: center;
-            gap:50px;
+            gap:10px;
             text-align: center;
             
         }
