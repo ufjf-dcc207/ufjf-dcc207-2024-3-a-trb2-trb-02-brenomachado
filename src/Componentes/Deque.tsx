@@ -4,11 +4,12 @@ import './Deque.css'
 export default function Deque()
 {
     const [itens, setItens] = useState<number[]>([]);
+    const [valor, setValor] = useState(0);
 
     function enfileiraFrente()
     {
         const clone = Array.from(itens);
-        clone.unshift(1);
+        clone.unshift(valor);
         setItens(clone);
     }
     function desenfileiraFrente()
@@ -24,7 +25,7 @@ export default function Deque()
     function enfileiraAtras()
     {
         const clone = Array.from(itens);
-        clone.push(2);
+        clone.push(valor);
         setItens(clone);
     }
 
@@ -50,6 +51,11 @@ export default function Deque()
                 
                 <input 
                     type="number" 
+                    value={valor}
+                    onChange={(e) => {
+                        const valor = parseInt(e.target.value)
+                        setValor(valor)
+                    }}
                     placeholder="numero"
                 />
                 <section>
