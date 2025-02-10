@@ -5,6 +5,22 @@ export default function Deque()
 {
     const [itens, setItens] = useState<number[]>([]);
 
+    function enfileiraFrente()
+    {
+        const clone = Array.from(itens);
+        clone.unshift(1);
+        setItens(clone);
+    }
+    function desenfileiraFrente()
+    {
+        const clone = Array.from(itens);
+        if(clone.length > 0)
+        {
+            clone.pop();
+            setItens(clone);
+        }
+    }
+
     return (
         <div className='Geral'>
             <h1>Fila Dupla</h1>
@@ -21,7 +37,7 @@ export default function Deque()
                 />
                 <section>
                     <button onClick={
-                        ()=>{}
+                        ()=>{enfileiraFrente()}
                     }>Enfileira Frente</button>
                     <button onClick={
                         ()=>{}
@@ -30,7 +46,7 @@ export default function Deque()
                         ()=>{}
                     }>Desenfileira Atrás</button>
                     <button onClick={
-                        () => {}
+                        () => {desenfileiraFrente()}
                     }>Desenfileira Frente</button>
                 </section>
                
