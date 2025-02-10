@@ -1,0 +1,23 @@
+.Geral{
+    /*borda guia*/
+    border: 5px solid black;
+    height: 1000px;
+    
+
+    h1{
+        /*borda guia*/
+        border: 5px solid red;
+        
+    
+    }
+    .FilaDupla
+    {
+        border: 5px solid blue;
+        .Elemento{
+            border: 2px solid red;
+        }
+    }
+    .Botoes{
+        
+    }
+}
