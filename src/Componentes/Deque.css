@@ -1,21 +1,52 @@
 .Geral {
-    border: 3px solid gray;
-    display: flex;
+    
+    border: 3px solid gray; 
+    display: flex; 
     align-items: center;
     flex-direction: column;
     h1{
+        /*caixa do título*/
+        margin-top: 100px; /*posição em relação ao teto*/
+        background-color: #bf2a2c;
+        width: 400px;
+        height: 100px;
+        border-radius: 15px;
+        /*texto do título*/
         font-family: Arial, Helvetica, sans-serif;
+        color: #f2f2f2;
+        font-size: 50px; /*até aqui, especificações da letra*/
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center; /*até aqui, como a letra se dispõe na caixa*/
     }
     .FilaDupla{
         border: 3px solid blue;
+        /*vizualização da fila*/
+        display: flex;
+
         .Elemento{
             border: 3px solid red;
+
+            /*aparência da cada célula*/
+            width: 100px;
+            height: 100px;
         }
     }
     .Botoes{
         border: 3px solid purple;
+
+        /*vizualização do quadro de botões*/
+        display: flex;
+        align-items: center;
+        
+
         input{
             border: 3px solid green;
+
+            /*aparência do botão dos numeros*/
+            width: 80px;
+            height: 80px;
         }
         section{
             border: 3px solid orangered;
