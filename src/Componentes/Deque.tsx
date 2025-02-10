@@ -48,16 +48,19 @@ export default function Deque()
                 ))}
             </div>
             <div className='Botoes'>
-                
-                <input 
-                    type="number" 
-                    value={valor}
-                    onChange={(e) => {
-                        const valor = parseInt(e.target.value)
-                        setValor(valor)
-                    }}
-                    placeholder="numero"
-                />
+                <div className='BotaoElemento'>
+                    <p>Elemento</p>
+                    <input 
+                        type="number" 
+                        value={valor}
+                        onChange={(e) => {
+                            const valor = parseInt(e.target.value)
+                            setValor(valor)
+                        }}
+                        placeholder="numero"
+                    />
+                </div>
+
                 <section>
                     <div className='Enfileirar'>
                         <p>Enfileirar</p>
